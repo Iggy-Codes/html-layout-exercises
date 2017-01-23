@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Form Exercise</title>
+</head>
+<body>
+  <h1>A Simple Form</h1>
+  <h2>Form fundamentals </h2>
+  <form action="#">
+    <fieldset>
+      <legend>Customer Info</legend>
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" autofocus placeholder="Enter your name" required />
+      <label for="phone">Telephone:</label>
+      <input type="telephone" name="phone" id="phone" placeholder="Patter: 1-234-567-8910" required />
+      <label for="email">Email address: </label>
+      <input type="email" name="email" id="address" placeholder="Enter your email address" required>
+    </fieldset>
+    <fieldset>
+      <legend>Books</legend>
+      <select name="books">
+        <option value="0">History</option>
+        <option value="1">Psicology</option>
+        <option value="2">Medicine</option>
+        <option value="3">Mystery</option>
+      </select>
+      <label for="quantity">Quantity (Maximum 5):</label>
+      <input type="number" name="quantity" id="quantity" max="5" min="1" step="1">
+    </fieldset>
+  </form>
+</body>
+</html>
